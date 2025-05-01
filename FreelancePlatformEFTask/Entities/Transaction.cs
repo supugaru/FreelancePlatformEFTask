@@ -17,7 +17,7 @@ public class Transaction
     public override string ToString()
     {
         return $"Transaction #{Id}, {Date.ToShortDateString()}:\n" +
-               $"Sender: {Sender.Name}, receiver: {Receiver.Name}\n" +
+               $"Sender: {Sender.Name}, receiver: {Receiver?.Name}\n" +
                $"Transaction type: {TransactionType.Name}, amount: ${Amount}\n";
     }
 }
